@@ -41,8 +41,8 @@ public class mainclass {
     
     private static int potencia(int numero, int cantidad){
         if (cantidad > 1)
-            return potencia(numero*numero, cantidad - 1);
+            return numero*potencia(numero, cantidad - 1);
         else
-            return numero*numero;
+            return numero;
     }
 }
