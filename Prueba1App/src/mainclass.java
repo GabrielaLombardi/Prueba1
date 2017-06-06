@@ -24,6 +24,16 @@ public class mainclass {
             System.out.println("Es numero par");
         else
             System.out.println("Es numero impar");
+        
+        System.out.println("");
+        System.out.println("El factorial de " + numero + " es: " + factorial(numero));
+    }
+    
+    private static int factorial(int numero){
+        if (numero > 0)
+            return numero * factorial(numero - 1);
+        else
+            return 1;
     }
     
 }
