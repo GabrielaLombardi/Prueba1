@@ -27,6 +27,9 @@ public class mainclass {
         
         System.out.println("");
         System.out.println("El factorial de " + numero + " es: " + factorial(numero));
+        
+        System.out.println("");;
+        System.out.println("El numero elevado al numero es: " + potencia(numero, numero));
     }
     
     private static int factorial(int numero){
@@ -36,4 +39,10 @@ public class mainclass {
             return 1;
     }
     
+    private static int potencia(int numero, int cantidad){
+        if (cantidad > 1)
+            return potencia(numero*numero, cantidad - 1);
+        else
+            return numero*numero;
+    }
 }
